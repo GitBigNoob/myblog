@@ -23,5 +23,12 @@
     top: 0;
     height: 4vh;
     font-size: 3vh;
-    left: 10%;
+}
+
+.bar-search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 4vh;
+    
 }

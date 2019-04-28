@@ -15,5 +15,5 @@ a:hover{
 /*a:visited指已经访问过的链接*/
 a:visited{
     text-decoration: underline;
-    color: green;
+    color: white;
 }
