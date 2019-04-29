@@ -1,0 +1,47 @@
+
+#ky{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+section{
+    height: 300px;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article{
+    height: 300px;
+    display:-webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    padding: 10px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.github{
+    padding: 10px;
+    max-height: 20px;
+    max-width: 20px;
+}

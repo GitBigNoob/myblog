@@ -1,11 +1,19 @@
-body
-    {
-        background-image: url('../imges/zhuye1.jpg');
-        background-repeat:no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-    }
+body{
+    background-image: url('../imges/zhuye1.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 *{
     margin: 0;
+}
+/*网页有多大*/
+html,body,section,article{
+    height: 100%;
+}
+
+section{
+    max-width: 1000px;
+    margin: 15px auto;
 }
