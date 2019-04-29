@@ -10,7 +10,7 @@
 }
 
 section{
-    height: 300px;
+    height: 200px;
     display:-webkit-flex;
     display:flex;
     -webkit-align-items: center;
@@ -21,7 +21,7 @@ section{
 }
 
 article{
-    height: 300px;
+    height: 200px;
     display:-webkit-flex;
     -webkit-align-items: center;
     align-items: center;
@@ -44,4 +44,13 @@ div{
     padding: 10px;
     max-height: 20px;
     max-width: 20px;
+}
+
+footer{
+    background-color: #ccc;
+    top: 2000px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }

@@ -10,7 +10,7 @@ body{
 }
 /*网页有多大*/
 html,body,section,article{
-    height: 100%;
+    height: 96%;
 }
 
 section{
