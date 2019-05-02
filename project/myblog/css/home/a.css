@@ -1,0 +1,19 @@
+/*a:link指未被访问的链接*/
+a:link{
+    text-decoration: none;
+    color: white;
+}
+/*a:active指鼠标正在点的链接*/
+a:active{
+    text-decoration: blue;
+}
+/*a:hover(徘徊)指鼠标在链接上*/
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+/*a:visited指已经访问过的链接*/
+a:visited{
+    text-decoration: underline;
+    color: white;
+}

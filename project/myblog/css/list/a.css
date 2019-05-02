@@ -1,7 +1,7 @@
 /*a:link指未被访问的链接*/
 a:link{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 /*a:active指鼠标正在点的链接*/
 a:active{
@@ -15,5 +15,5 @@ a:hover{
 /*a:visited指已经访问过的链接*/
 a:visited{
     text-decoration: underline;
-    color: white;
+    color: black;
 }

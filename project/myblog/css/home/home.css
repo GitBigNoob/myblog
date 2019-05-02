@@ -53,3 +53,12 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+
+section{
+    max-width: 1000px;
+    margin: 15px auto;
+}
+/*网页有多大*/
+html,body,section,article{
+    height: 96%;
+}

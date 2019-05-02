@@ -5,29 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/list/list.css" />
-    <link rel="stylesheet" type="text/css" href="../css/a.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home/a.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home/bar.css" />
     <title>我的文章</title>
 </head>
 <!--文章列表采用圣杯布局(Holy Grail Layout)-->
 <body>
     <header>
         <nav>
-            
+        <!--这里是网页的bar，共有1.博客主页（指向home）  2.所有文章（指向list）-->
+            <img src="../imges/icon/github-icon.ico" class="noob" />
+            <p class="bar-font">每天进步一点点</p>
+            <a href="./home.html" class="bar-text" style="left: 25%">
+                <dfn title="看主页请点这里">
+                    <h5>博客主页</h5>
+                </dfn>
+            </a>
+            <a href="./list.html" class="bar-text" style="left: 40%">
+                <dfn title="看文章请点这里">
+                    <h5>所有文章</h5>
+                </dfn>
+            </a>
+            <a href="./rescorce.html" class="bar-text" style="left:55%" >
+                <dfn title="我的资源分享">
+                    <h5>资源</h5>
+                </dfn>
+            </a>
+            <a href="./me.html" class="bar-text" style="left:70%" >
+                <dfn title="看阳哥">
+                    <h5>关于我</h5>
+                </dfn>
+            </a>
         </nav>
     </header>
-    <div class="HolyGrail-body">
-        <!--中间页-->
-        <article class="HolyGrail-content">
+    <!--中间的部分-->
+    <section>
+        <!--这个是左边菜单栏-->
+        <div class="leftbar">
             <p>hhh</p>
+        </div>
+        <!--这个在中间的内容栏-->
+        <article>
+            <a href="./article/firstarticle.html">
+                <div class="cent">
+                    <header class="title">
+                        我的第一篇文章
+                    </header>
+                    <div>
+                        <p>hhh...</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./article/2.html">
+                <div class="cent">
+                    <header class="title">
+                        我的第二篇文章
+                    </header>
+                    <div>
+                        <p>hhh...</p>
+                    </div>
+                </div>
+            </a>
         </article>
-        <!--左侧导航栏-->
-        <article class="HolyGrail-nav">
-            <p>ggg</p>
-        </article>
-        <!--右侧导航栏-->
-        <article class="HolyGrail-ads">
-            <p>jjj</p>
-        </article>
-    </div>
+        <!--这个是左侧的菜单栏-->
+        <aside>
+            <div class="searchgoogle">
+                <form method="get" action="https://www.google.com/search">
+                    <img src="../imges/icon/google.ico" />
+                    <input name="ie" value="UTF-8" type="hidden" />   
+                    <input size="30" name="q"  type="text"/>   
+                    <input name="Search" value="Search" type="submit" /> 
+                </form>
+            </div>
+        </aside>
+    </section>
 </body>
 </html>
+ 
