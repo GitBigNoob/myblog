@@ -1,0 +1,39 @@
+
+/*24292e*/
+
+
+.HolyGrail{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header,footer{
+    flex: 1;
+}
+
+.HolyGrail-body{
+    display: flex;
+    flex:1;
+}
+
+.HolyGrial-content{
+    flex:1;
+}
+
+.HolyGrail-nav,.HolyGrail-ads{
+    /*设置两边栏宽度*/
+    flex: 0 0 12em;
+}
+
+.InputAddOn{
+    display: flex;
+}
+ 
+.InputAddOn-item{
+    flex: 1;
+}
+
+.InputAddOn-field{
+    flex: 1;
+}

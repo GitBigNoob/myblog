@@ -1,6 +1,6 @@
 nav{
-    color: #000000;
-    background-color: #ccc;
+    color: #cccccc;
+    background-color: #000;
     top:0;
     position: fixed;
     width: 100%;
@@ -20,9 +20,10 @@ nav{
     position: absolute;
     /*去除超链接下划线*/
     text-decoration: none;
-    top: 0;
+    top: 1vh;
     height: 4vh;
-    font-size: 3vh;
+    font-size: 2vh;
+    margin: 0 auto;
 }
 
 .bar-search{
