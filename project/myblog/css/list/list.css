@@ -63,6 +63,7 @@ aside{
     border-radius: 15px;
     width: 400px;
 }
+
 /*内嵌google搜索(自行翻墙)*/
 .searchgoogle{
     display: flex;
@@ -78,11 +79,25 @@ aside{
 }
 /*对google图标大小进行设置*/
 .google{
-    height: 20px;
+    height: 25px;
+    margin: 5px auto;
 }
+
 /*对图片大小进行调整*/
 .img{
     padding: 10px;
-    max-height: 20px;
-    max-width: 20px;
+    max-height: 30px;
+    max-width: 30px;
 }
+
+.InputAddOn {
+    display: flex;
+  }
+  
+  .InputAddOn-field {
+    flex: 1;
+  }
+
+  span{
+      height: 10px;
+  }
