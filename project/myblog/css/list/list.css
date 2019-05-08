@@ -108,9 +108,30 @@ span{
 }
 
 #bing{
+    display: flex;
     height: 960px;
 }
 
 footer{
     height:300px;
+}
+
+#l{
+    position: absolute;
+    top: 850px;
+    left: 1500px;
+    background-color: #24292e;
+    border-radius: 15px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/*这里是老师要求的设置时间*/
+#time{
+    color: #fff;
+}
+#s{
+    text-align: center;
 }
