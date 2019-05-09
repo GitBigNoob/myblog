@@ -7,13 +7,69 @@ a:link{
 a:active{
     text-decoration: blue;
 }
-/*a:hover(徘徊)指鼠标在链接上*/
 a:hover{
-    text-decoration: underline;
     color: red;
+    background-color: #eee;
 }
 /*a:visited指已经访问过的链接*/
 a:visited{
     text-decoration: underline;
     color: black;
 }
+
+nav{
+    width: 300px;
+    height: 350px;
+    background-color: #24252e;
+    border-radius: 15px;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    line-height: 40px;
+}
+
+ul li{
+    margin: 15px 15px 15px 15px;
+    padding: 3px;
+}
+
+a {
+	text-decoration: none;
+	padding: 0 20px;
+	color: #fff;
+	display: block;
+}
+/*二级菜单默认不显示*/
+ul li ul li {
+	float: left;
+    display: none;
+    background-color: #24252e;
+}
+/*当鼠标经过时二级菜单显示*/
+ul li:hover li {
+    display: block
+}
+/*设置文件颜色*/
+ul li a dfn{
+    color:#fff;
+}
+ul li ul li a dfn{
+    color:#fff;
+}
+/*设置滑动时显示的颜色*/
+ul li a:hover dfn{
+    color: red;
+    background-color: #eee;
+}
+
+ul li ul li a:hover dfn{
+    color: red;
+    background-color: #eee;
+}
+
+ul li ul{
+    float: left;
+}
+

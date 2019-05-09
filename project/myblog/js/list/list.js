@@ -37,7 +37,7 @@ function getDateDemo(){
         var dateTime = "现在是" + year + "年" + month + "月" + date + "日" + hours + "时" + minutes + "分" + seconds + "秒";
         var stage = "";
         //判断现在的时间处于什么阶段
-        if(hours >= 6 && hours <= 12){
+        if(hours < 6){
             stage += "现在是凌晨赶紧去睡觉"
         }else if(hours <= 10){
             stage += "早上好";

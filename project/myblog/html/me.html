@@ -1,61 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+    <link rel="stylesheet" href="../../tab/mobileReset.css" />
+    <style type="text/css">
+        #box{width: 500px;height: 50px;background: blue;margin:100px auto;line-height: 50px;padding:0 15px;overflow: hidden}
+        #box span{color: red;font-size: 14px;}
+        #box p{color: yellow;font-size: 14px;white-space: nowrap;display: inline-block;}
+        .boxCon{width: 10000px;}
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="boxCon">
+        <p id="begin"><span>通知:</span>offset():等同于jQuery中的offset方法，实现获取页面中任意一个元素距离body的偏移（包含左偏移和上偏移），不管当前元素的父级参照物是谁。</p>
+        <p><span>通知:</span>offset():等同于jQuery中的offset方法，实现获取页面中任意一个元素距离body的偏移（包含左偏移和上偏移），不管当前元素的父级参照物是谁。</p>
+    </div>
+</div>
+<script>
+    var box = document.getElementById("box");
+    var begin = document.getElementById("begin");
+    var beginw = getCss(begin,"width");
+    //无缝轮播代码其实很简单 哈哈
+    var timer = window.setInterval(function(){
+        box.scrollLeft++;
+        var curLeft = box.scrollLeft;
+        if(curLeft >= beginw){
+            box.scrollLeft = 0;
+        }
+    },1);
 
-<html>
-	<head>
-		<title></title>
-		
-		<script>
-		function getDateDemo(){
-			/*
-			
-				//声明时间
-				var date = new Date();
-				alert(date);//当前时间
-				alert(date.toLocaleString());//转化为本地时间
-				alert(date.getFullYear());//显示年份
-				alert(date.getMonth() + 1);//显示月份 0-11，需要加1
-				alert(date.getDate());//显示一月中的日期
-				alert(date.getDay());//显示一周的日期，星期几
-				alert(date.getHours());//获取小时时间
-				alert(date.getMinutes());//获取当前分钟
-				alert(date.getSeconds());//获取当前秒数
-				alert(date.getMilliseconds());//获取当前的毫秒数
-				alert(date.getTime());//获取从1970年1月1日午夜零时，到当前时间的毫秒值
-			*/	
-				//分别获取年、月、日、时、分、秒
-				var myDate = new Date();
-				var year = myDate.getFullYear();
-				var month = myDate.getMonth() + 1;
-				var date = myDate.getDate();
-				var hours = myDate.getHours();
-				var minutes = myDate.getMinutes();
-				var seconds = myDate.getSeconds();
-				
-				//月份的显示为两位数字如09月
-				if(month < 10 ){
-					month = "0" + month;
-				}
-				if(date < 10 ){
-					date = "0" + date;
-				}
-				
-				//时间拼接
-				var dateTime = year + "年" + month + "月" + date + "日" + hours + "时" + minutes + "分" + seconds + "秒";
-				
-				//document.write(dateTime);//打印当前时间
-				
-				var divNode = document.getElementById("time");
-				divNode.innerHTML = dateTime;
-			
-		}	
-		window.setInterval("getDateDemo()",1000);//每隔1秒，调用一次getDateDemo()
-	
-			
-		</script>
- 
-	</head>
-	
-	<body>
-		<div id="time"></div>
-	</body>
- 
+    //获取元素具体样式方法
+    function getCss(curEle,attr){
+        var val = null,reg = null;
+        if("getComputedStyle" in window){
+            val = window.getComputedStyle(curEle,null)[attr];
+        }else{
+            if(attr === "opacity"){
+                val = curEle.currentStyle["filter"];
+                reg = /^alpha\(opacity=(\d+(?:\.\d+)?)\)$/i;
+                val = reg.test(val)?reg.exec(val)[1]/100:1;
+            }else{
+                val = curEle.currentStyle[attr];
+            }
+        }
+        reg = /^(-?\d+(\.\d+)?)(px|pt|rem|em)?$/i;
+        return reg.test(val)?parseFloat(val):val;
+    }
+</script>
+</body>
 </html>
