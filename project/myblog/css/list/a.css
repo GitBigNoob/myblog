@@ -39,7 +39,8 @@ a {
 	text-decoration: none;
 	padding: 0 20px;
 	color: #fff;
-	display: block;
+    display: block;
+    transition:all 1s ease;
 }
 /*二级菜单默认不显示*/
 ul li ul li {
@@ -61,7 +62,6 @@ ul li ul li a dfn{
 /*设置滑动时显示的颜色*/
 ul li a:hover dfn{
     color: red;
-    background-color: #eee;
 }
 
 ul li ul li a:hover dfn{

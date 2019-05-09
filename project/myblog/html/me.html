@@ -2,52 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>无缝滚动</title>
-    <link rel="stylesheet" href="../../tab/mobileReset.css" />
-    <style type="text/css">
-        #box{width: 500px;height: 50px;background: blue;margin:100px auto;line-height: 50px;padding:0 15px;overflow: hidden}
-        #box span{color: red;font-size: 14px;}
-        #box p{color: yellow;font-size: 14px;white-space: nowrap;display: inline-block;}
-        .boxCon{width: 10000px;}
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/me/me.css" />
+    <title>Document</title>
 </head>
 <body>
-<div id="box">
-    <div class="boxCon">
-        <p id="begin"><span>通知:</span>offset():等同于jQuery中的offset方法，实现获取页面中任意一个元素距离body的偏移（包含左偏移和上偏移），不管当前元素的父级参照物是谁。</p>
-        <p><span>通知:</span>offset():等同于jQuery中的offset方法，实现获取页面中任意一个元素距离body的偏移（包含左偏移和上偏移），不管当前元素的父级参照物是谁。</p>
-    </div>
-</div>
-<script>
-    var box = document.getElementById("box");
-    var begin = document.getElementById("begin");
-    var beginw = getCss(begin,"width");
-    //无缝轮播代码其实很简单 哈哈
-    var timer = window.setInterval(function(){
-        box.scrollLeft++;
-        var curLeft = box.scrollLeft;
-        if(curLeft >= beginw){
-            box.scrollLeft = 0;
-        }
-    },1);
-
-    //获取元素具体样式方法
-    function getCss(curEle,attr){
-        var val = null,reg = null;
-        if("getComputedStyle" in window){
-            val = window.getComputedStyle(curEle,null)[attr];
-        }else{
-            if(attr === "opacity"){
-                val = curEle.currentStyle["filter"];
-                reg = /^alpha\(opacity=(\d+(?:\.\d+)?)\)$/i;
-                val = reg.test(val)?reg.exec(val)[1]/100:1;
-            }else{
-                val = curEle.currentStyle[attr];
-            }
-        }
-        reg = /^(-?\d+(\.\d+)?)(px|pt|rem|em)?$/i;
-        return reg.test(val)?parseFloat(val):val;
-    }
-</script>
+    <header>
+        <nav>
+            <ul id="barul">
+                <li><a href="../html/home.html"><dfn title="我的主页">我的主页</dfn></a></li>
+                <li><a href="../html/list.html"><dfn title="我的文章">我的文章</dfn></a></li>
+                <li><a href="../html/resource.html"><dfn title="资源分享">资源分享</dfn></a></li>
+                <li><a href="../html/me.html"><dfn title="关于我">关于我</dfn></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="leftBar">
+            
+        </div>
+        <article>
+            <div class="Title">
+                欢迎光临我的博客
+            </div>
+            <div class="Me">
+                ---这是一个自我介绍
+            </div>
+            <!--正文-->
+            <div class="arti">
+                &emsp;&emsp;emmmmm写一点什么好呢？其实，我也不是很想写这个自我介绍，奈何课程具体要求中要求写一个个人简历栏目
+                ，要求包含经历、兴趣、爱好等个人信息。没办法，在这写两笔。
+            </div>
+            <div class="arti">
+                &emsp;&emsp;要说我的个人经历，那还真的没有啥。因为我还真不知道怎么写。
+            </div>
+            <div class="arti">
+                &emsp;&emsp;本人性别男，年龄未知（今年大一可以大致推算以下）在这十几年的划水生涯中也没啥经历
+                （好了我的个人经历介绍完了）
+            </div>
+            <div class="arti">
+                &emsp;&emsp;至于爱好嘛，有挺多，比如：吃个鸡啊，打打王者荣耀啊什么的。有兴趣的可以一起玩啊。
+            </div>
+            <div class="arti">
+                &emsp;&emsp;最近在上web程序设计课，有莫有dalao来救救我这个菜鸡啊。。。
+            </div>
+            <div class="arti" style="text-align:center;">
+                <img src="../imges/mengxin.jpg" />
+            </div>
+            <div class="arti">
+                &emsp;&emsp;欢迎大家给我发<a href="mailto:tanzhiwen2018@gmail.com">邮件</a>来指导萌新<span>学习</span>
+                (问我中间为啥有空白？你点一下就知道了)
+            </div>
+            <div class="arti">
+                &emsp;&emsp;我觉得，用一张图就可以很好的形容我的程序设计
+            </div>
+            <div class="arti" style="text-align:center;">
+                <img src="../imges/icpcnoob.jpg" />
+            </div>
+            <div class="arti">
+                &emsp;&emsp;如果dalao开心的话欢迎给我发<a href="mailto:tanzhiwen2018@gmail.com">邮件</a>诱拐萌新入坑
+                (为啥中间又有空白？你还可以点一下//疯狂暗示)
+            </div>
+        </article>
+        <aside>
+            <p>hhh</p>
+        </aside>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 </html>

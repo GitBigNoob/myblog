@@ -154,3 +154,7 @@ footer{
     text-align: center;
     line-height: 30px;
 }
+/*天气预报格式设置*/
+.weather{
+    margin: 10px;
+}
