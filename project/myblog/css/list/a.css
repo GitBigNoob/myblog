@@ -74,8 +74,9 @@ ul li ul{
 }
 
 #hhh{
-    transition:all 3s ease;
-    width: 10px;
+    transition:all 3s ease 0s;
+    height: 10px;
+    width: 224px;
     background-color: #24252e;
     display: none;
 }
@@ -85,4 +86,8 @@ ul li ul{
     display: block;
     background-color: #24252e;
     border-radius: 10px;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }

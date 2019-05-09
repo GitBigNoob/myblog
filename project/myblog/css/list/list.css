@@ -91,12 +91,12 @@ aside{
 
 .InputAddOn {
     display: flex;
-  }
+}
   
-  .InputAddOn-field {
+.InputAddOn-field {
     flex: 1;
     border-radius: 15px 0 0 15px;
-  }
+}
 
 .InputAddOn-item{
     flex: 1;
@@ -138,4 +138,19 @@ footer{
 
 #barLink{
     
+}
+
+/*以下代码是跑马灯*/
+#div1{
+    width: 180px;
+    margin: auto;
+    border: 1px solid #24292e;
+    overflow: hidden;   /*必须设置该属性*/
+}
+
+.child{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
 }
