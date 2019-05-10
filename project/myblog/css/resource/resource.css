@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+/*设置网站导航*/
+header{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 0px;
+    height: 5vh;
+    background-color: #24252e;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px;
+}
+nav{
+    text-align: center;
+}
+
+/*bar ul id*/
+#barul{
+
+}
+
+#barul li{
+    float: left; 
+    margin: 5px auto; 
+}
+/*对链接到其他网站的a进行修饰*/
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+a:active{
+    text-decoration: blue;
+}
+a:hover{
+    color: red;
+    background-color: blue;
+    width: 200px;
+}
+a:visited{
+    text-decoration: underline;
+    color: #fff;
+}
+a{
+    margin: 10px auto;
+    width: 10px;
+    transition:all 1s ease;
+}

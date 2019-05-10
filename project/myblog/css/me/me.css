@@ -57,25 +57,27 @@ a{
 }
 /*设置主要内容的样式表*/
 section{
-    height: 95vh;
+    height: 1500px;
     width: 100%;
     display: flex;
 }
 .leftBar{
   width: 400px;
-  height: 1000px;
+  height: 1300px;
   display: flex;
 }
 article{
   width: 800px;
-  height: 1000px;
+  height: 1300px;
   display: flex;
   flex-direction: column;
 }
 aside{
   width: 500px;
-  height: 1000px;
+  height: 1300px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .Title{
   text-align: center;
