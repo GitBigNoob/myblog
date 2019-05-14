@@ -55,3 +55,50 @@ a{
     width: 10px;
     transition:all 1s ease;
 }
+/*设置主要内容的样式表*/
+section{
+    height: 1500px;
+    width: 100%;
+    display: flex;
+}
+.leftBar{
+  width: 400px;
+  height: 1300px;
+  display: flex;
+}
+article{
+  width: 800px;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+}
+aside{
+  width: 500px;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Title{
+  text-align: center;
+  margin: 15px auto;
+  width: 800px;
+  height: 60px;
+  font-size: 50px;
+}
+.Me{
+  text-align: right;
+  font-size: 20px;
+}
+/*正文*/
+.arti{
+    font-size: 20px;
+    padding: 10px;
+}
+span{
+    color: red;
+}
+/*设置页脚*/
+footer{
+    height: 500px;
+}
