@@ -9,11 +9,12 @@
     <link rel="stylesheet" type="text/css" href="../css/home/background.css" />
     <link rel="stylesheet" type="text/css" href="../css/home/bar.css" />
     <link rel="stylesheet" type="text/css" href="../css/home/a.css" />
+    <link rel="stylesheet" href="../css/animate.css">
     <title>一个渴望成为大佬的菜鸡</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header >
+        <nav class="animated flipInX">
         <!--这里是网页的bar，共有1.博客主页（指向home）  2.所有文章（指向list）-->
             <img src="../imges/icon/github-icon.ico" class="noob" />
             <p class="bar-font">每天进步一点点</p>
@@ -41,27 +42,48 @@
     </header>
     <section>
         <article>
-            <img src="../imges/ky.png" id="ky" />
-            <h1><b>一个渴望成为大佬的菜鸡</b></h1>
+            <img src="../imges/ky.png" id="ky" class="animated fadeInUp"/>
+            <h1 class="animated fadeInUp"><svg height="50" width="450"xmlns="http://www.w3.org/2000/svg" id="svg">
+                <defs>
+                  <style>
+                    @keyframes stroke {100% { stroke-dashoffset: -400;}}    
+                    .text{font:bolder 40px/40px Impact;} 
+                    .use-text{fill: none;stroke-width: 3;stroke-dasharray: 70 330;stroke-dashoffset: 0;animation: stroke 6s infinite linear;}
+                    .use-text:nth-child(5n+1){stroke: rgb(8, 242, 250);animation-delay: -1.2s;}
+                    .use-text:nth-child(5n+2){stroke: rgb(65, 201, 247);animation-delay: -2.4s;}
+                    .use-text:nth-child(5n+3){stroke: rgb(115, 199, 248);animation-delay: -3.6s;}
+                    .use-text:nth-child(5n+4){stroke: rgb(196, 250, 245);animation-delay: -4.8s;}
+                    .use-text:nth-child(5n+5){stroke: rgb(255, 255, 255);animation-delay: -6s;}
+                  </style>  
+                </defs>  
+                <symbol id="s-text">
+                  <text class="text" dominant-baseline="hanging" y="10" x="0" >一个渴望成为大佬的菜鸡</text>
+                </symbol>  
+                <use xlink:href="#s-text" class="use-text"></use>
+                <use xlink:href="#s-text" class="use-text"></use>
+                <use xlink:href="#s-text" class="use-text"></use>
+                <use xlink:href="#s-text" class="use-text"></use>
+                <use xlink:href="#s-text" class="use-text"></use>  
+              </svg></h1>
             <div>
                 <a href="https://github.com/GitBigNoob" target="_blank" >
                     <dfn title="我的GitHub网址">
-                        <img src="../imges/icon/github.png" class="github" />
+                        <img src="../imges/icon/github.png" class="github animated rotateIn" />
                     </dfn>
                 </a>
                 <a href="#" >
                     <dfn title="my wechat">
-                            <img src="../imges/icon/wechat.png" class="github"/>
+                            <img src="../imges/icon/wechat.png" class="github animated rotateIn"/>
                     </dfn>
                 </a>
                 <a href="#">
                     <dfn title="my qq">
-                            <img src="../imges/icon/qq.png" class="github"/>
+                            <img src="../imges/icon/qq.png" class="github animated rotateIn"/>
                     </dfn>
                 </a>
                 <a href="mailto:tanzhiwen2018@gmail.com" >
                     <dfn title="给我发邮件" >
-                        <img src="../imges/icon/mail-icon.png"  class="github"/>
+                        <img src="../imges/icon/mail-icon.png"  class="github animated rotateIn"/>
                     </dfn>
                 </a>
             </div>

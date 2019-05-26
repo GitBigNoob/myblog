@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <svg height="50" width="450"xmlns="http://www.w3.org/2000/svg" id="svg">
+            <defs>
+              <style>
+                @keyframes stroke {100% { stroke-dashoffset: -400;}}    
+                .text{font:bolder 40px/40px Impact;} 
+                .use-text{fill: none;stroke-width: 3;stroke-dasharray: 70 330;stroke-dashoffset: 0;animation: stroke 6s infinite linear;}
+                .use-text:nth-child(5n+1){stroke: pink;animation-delay: -1.2s;}
+                .use-text:nth-child(5n+2){stroke: lightblue;animation-delay: -2.4s;}
+                .use-text:nth-child(5n+3){stroke: lightgreen;animation-delay: -3.6s;}
+                .use-text:nth-child(5n+4){stroke: orange;animation-delay: -4.8s;}
+                .use-text:nth-child(5n+5){stroke: tan;animation-delay: -6s;}
+              </style>  
+            </defs>  
+            <symbol id="s-text">
+              <text class="text" dominant-baseline="hanging" y="10" x="0" >一个渴望成为大佬的菜鸡</text>
+            </symbol>  
+            <use xlink:href="#s-text" class="use-text"></use>
+            <use xlink:href="#s-text" class="use-text"></use>
+            <use xlink:href="#s-text" class="use-text"></use>
+            <use xlink:href="#s-text" class="use-text"></use>
+            <use xlink:href="#s-text" class="use-text"></use>  
+          </svg>
+          
+
+
+
+
+      <!--<svg height="100" width="1200"xmlns="http://www.w3.org/2000/svg" id="svg">
+        <defs>
+          <style>
+            .text{font:bolder 100px/100px Impact;}   
+            @keyframes stroke {
+              50% {
+                stroke-width:30;
+                stroke-opacity: .5;
+              }
+            } 
+            .g-spots circle{stroke-width: 0;animation: stroke 2s infinite;}
+            .g-spots circle:nth-child(1) {animation-delay: -0.4s;}
+            .g-spots circle:nth-child(2) {animation-delay: -1.2s;}
+          </style>  
+        <pattern id="p-spots" width="0.12" height="0.2">
+          <g class="g-spots">
+            <circle r="10" cx="10" cy="5" fill="#3F0B1B" stroke="#3F0B1B" />
+            <circle r="10" cx="25" cy="20" fill="#CF423C" stroke="#CF423C"/> 
+          </g>
+        </pattern>
+        </defs>  
+        <text class="text" dominant-baseline="hanging" y="10" x="0" stroke="url(#p-spots)" fill="none" stroke-width="5" stroke-opacity="0.5">一个渴望成为大佬的菜鸡</text>
+      </svg>-->
+
+
+
+      <!--<svg height="100" width="600" xmlns="http://www.w3.org/2000/svg" id="svg">
+        <defs>
+          <style>
+           .text{font:bolder 50px/50px Impact;} 
+          </style>  
+          <radialGradient id="Gradient1">
+            <animate attributeName="r" values="0%;150%;100%;0%" dur="5" repeatCount="indefinite" />
+            <stop offset="0%" stop-color="#fff">
+              <animate attributeName="stop-color" values="#333;#FFF;#FFF;#333" dur="5" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="rgba(55,55,55,0)"/>
+          </radialGradient>
+        </defs>  
+        <text class="text" dominant-baseline="hanging" y="10" x="0" fill="url(#Gradient1)">一个渴望成为大佬的菜鸡</text>
+      </svg>-->
+</body>
+</html>

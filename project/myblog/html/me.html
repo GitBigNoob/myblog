@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="../imges/noob.png" /> 
     <link rel="stylesheet" type="text/css" href="../css/me/me.css" />
+    <link rel="stylesheet" href="../css/animate.css">
     <title>Document</title>
 </head>
 <body>
@@ -23,9 +24,31 @@
         <div class="leftBar">
             
         </div>
-        <article>
-            <div class="Title">
-                欢迎光临我的博客
+        <article class="animated flip">
+            <div class="Title magic">
+                <svg height="100" xmlns="http://www.w3.org/2000/svg" id="svg">
+                    <defs>
+                      <style>
+                        @keyframes stroke {100% { stroke-dashoffset: -400;}}    
+                        .text{font:bolder 100px/100px Impact;} 
+                        .use-text{fill: none;stroke-width: 6;stroke-dasharray: 70 330;stroke-dashoffset: 0;animation: stroke 6s infinite linear;}
+                        .use-text:nth-child(5n+1){stroke: pink;animation-delay: -1.2s;}
+                        .use-text:nth-child(5n+2){stroke: lightblue;animation-delay: -2.4s;}
+                        .use-text:nth-child(5n+3){stroke: lightgreen;animation-delay: -3.6s;}
+                        .use-text:nth-child(5n+4){stroke: orange;animation-delay: -4.8s;}
+                        .use-text:nth-child(5n+5){stroke: tan;animation-delay: -6s;}
+                      </style>  
+                    </defs>  
+                    <symbol id="s-text">
+                      <text class="text" dominant-baseline="hanging" y="10" x="0" >match</text>
+                    </symbol>  
+                    <use xlink:href="#s-text" class="use-text"></use>
+                    <use xlink:href="#s-text" class="use-text"></use>
+                    <use xlink:href="#s-text" class="use-text"></use>
+                    <use xlink:href="#s-text" class="use-text"></use>
+                    <use xlink:href="#s-text" class="use-text"></use>  
+                  </svg>
+                  
             </div>
             <div class="Me">
                 ---这是一个自我介绍
@@ -72,22 +95,22 @@
             </div>
         </article>
         <aside>
-                <div class="arti" style="text-align:center;">
+                <div class="arti animated zoomIn" style="text-align:center;" >
                         <img src="../imges/v2-536c822277727145bfce2d24b7b59eb0_hd.gif" />
                 </div>
-                <div class="arti" style="text-align:center;">
+                <div class="arti animated fadeInDown" style="text-align:center;">
                         <img src="../imges/v2-15eb0fe1efbb9b806182704a0ac5b277_r.jpg" style="width:350px;"/>
                 </div>
-                <div class="arti" style="text-align:center;">
+                <div class="arti animated flipInX" style="text-align:center;">
                         <img src="../imges/wo.jpg" style="width:350px;"/>
                 </div>
-                <div class="arti" style="text-align:center;">
+                <div class="arti animated fadeInUp" style="text-align:center;">
                         <img src="../imges/mxjl.jpg" style="width:200px;"/>
                 </div>
         </aside>
     </section>
     <footer>
-        自豪的采用....
+        自豪的采用我也不知道是什么架构。。。
     </footer>
 </body>
 </html>

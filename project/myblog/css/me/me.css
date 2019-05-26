@@ -104,3 +104,11 @@ span{
 footer{
     height: 500px;
 }
+@keyframes stripes {100% {background-position: 0 -50px;}}
+.magic{
+    animation: stripes 2s linear infinite;
+    background:linear-gradient(crimson 50%, #aaa 50%) 0 0/ 100% 50px ;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    font:bolder 50px/50px Impact;
+}
